@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Detail View
+{% endblock title %}
+
+{% block content %}
+    <h3>Title: {{ detailed.title }}</h3>
+    <h4>Subtitle: {{ detailed.subtitle }}</h4>
+    <p>Body: {{ detailed.body }}</p>
+    <p>Published on: {{ detailed.created_on }}</p>
+    <span><strong>User: {{ detailed.author }}</strong></span>
+{% endblock content %}
