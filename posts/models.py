@@ -16,5 +16,5 @@ class Post(models.Model): # Classes in Python follow Camel Case notation: class 
     def __str__(self):
         return f"{self.title} - {self.author}"
     
-    def get_absoulte_url(self):
-        return reversed("post_detail", args=[self.id])
+    def get_absolute_url(self):
+        return reverse("post_detail", args=[self.id])
