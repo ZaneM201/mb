@@ -2,7 +2,8 @@
     background-color: #6351ce;
     color: azure;
     display: flex;
-    border: solid 1px grey;
+    border: solid 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     margin-bottom: 20px;
     margin-right: 20px;
 }
