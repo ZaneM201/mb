@@ -1,0 +1,17 @@
+.card{
+    background-color: #6351ce;
+    color: azure;
+    display: flex;
+    border: solid 1px grey;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(5, 240, 248);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}

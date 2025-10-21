@@ -1,14 +1,19 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
     Posts
 {% endblock title %}
 
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+{% endblock css %}
+
 {% block content %}
     <h1>Posts</h1>
     <ul>
         {% for item in posts %}
-            <div>
+            <div class="card container-fluid">
                 <h5>Title: {{ item.title }}</h5>
                 <p>Body: {{ item.body|truncatechars:10 }}</p>
                 <span><strong>User: {{ item.author }}</strong></span>
